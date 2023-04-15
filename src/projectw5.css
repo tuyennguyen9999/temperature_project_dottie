@@ -1,0 +1,61 @@
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+img {
+  width: 150px;
+  padding-right: 20px;
+}
+.container {
+  display: block;
+  margin: 50px auto;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid black;
+}
+.daily-weather {
+  margin: 20px auto;
+}
+
+.search {
+  font-family: monospace;
+  margin: 20px auto;
+  position: absolute;
+  top: 70px;
+}
+
+.current-city {
+  font-family: monospace;
+  display: block;
+  margin: 30px auto;
+  text-align: center;
+  font-size: 22px;
+  color: cornflowerblue;
+}
+
+.current-city .city {
+  font-weight: bold;
+  opacity: 0.7;
+}
+.temp {
+  font-family: Google Sans, arial, sans-serif;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+.unit {
+  position: relative;
+  top: -22px;
+}
+
+.weather {
+  line-height: 1.5;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+.daily-weather {
+  margin: 50px 0 10px 0;
+}
