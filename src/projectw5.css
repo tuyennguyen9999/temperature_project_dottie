@@ -71,3 +71,19 @@ li {
 .daily-weather {
   margin: 50px 0 10px 0;
 }
+
+.units {
+  position: relative;
+  font-size: 16px;
+  top: -34px;
+  text-decoration: none;
+}
+
+.active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+
+.active:hover {
+  text-decoration: none;
+}
