@@ -85,33 +85,6 @@ function currentPosition() {
 let currentButton = document.querySelector("#current-position");
 currentButton.addEventListener("click", currentPosition);
 
-//Add unit convertion
-function displayFahrenheitTemperature(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#current-temp");
-
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
-  let fahrenheiTemperature = (celsiusTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(fahrenheiTemperature);
-}
-
-function displayCelsiusTemperature(event) {
-  event.preventDefault();
-  celsiusLink.classList.add("active");
-  fahrenheitLink.classList.remove("active");
-  let temperatureElement = document.querySelector("#current-temp");
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
-}
-
-let fahrenheitLink = document.querySelector("#degree-f");
-fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
-
-let celsiusLink = document.querySelector("#degree-c");
-celsiusLink.addEventListener("click", displayCelsiusTemperature);
-
-let celsiusTemperature = null;
-
 //Default display
 function search(city) {
   let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
