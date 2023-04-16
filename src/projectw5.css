@@ -12,31 +12,28 @@ img {
   padding-right: 20px;
 }
 
+li {
+  text-decoration: none;
+}
+
 .sign {
   text-align: center;
   font-size: 20px;
   font-family: monospace;
   opacity: 0.7;
-  margin: 40px auto;
+  margin: 20px auto;
   color: #282d4f;
 }
 
 .container {
   display: block;
-  margin: 50px auto;
+  margin: 30px auto;
   border-radius: 10px;
   padding: 20px;
   border: 1px solid black;
 }
 .daily-weather {
   margin: 20px auto;
-}
-
-.search {
-  font-family: monospace;
-  margin: 20px auto;
-  position: absolute;
-  top: 70px;
 }
 
 .current-city {
@@ -68,6 +65,7 @@ img {
   line-height: 1.5;
   font-family: monospace;
   font-size: 16px;
+  text-transform: capitalize;
 }
 
 .daily-weather {
