@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Temperature</title>
+    <meta charset="UTF-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/projectw5.css">
+</head>
+
+<body>
+    <div class=" container border border-primary">
+        <h1>
+            Don't care about the weather! It's time to eat 😉
+        </h1>
+
+        <div class="current-city">
+            Weather Today in <span class="city" id="current-city">Ho Chi Minh, Vietnam</span>
+        </div>
+        <div class="current-temperature">
+            <div class="row">
+                <div class="col-3">
+                    <form id="search-engine">
+                        <input type="text" placeholder="enter city name" id="search-city" autocomplete="off" />
+                        <input type="submit" value="search" />
+                        <br />
+                        <button id="current-position">Current</button>
+                    </form>
+                </div>
+                <div class="col-9">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="https://cdn-icons-png.flaticon.com/512/5904/5904053.png" alt="cloudy icon"
+                                id="icon" />
+                            <span class="temp" id="current-temp">20</span> <span class="unit"> <a href="#"
+                                    id="degree-c">℃</a> |
+                                <a href="#" id="degree-f">℉</a>
+                        </div></span>
+                        <div class="col-4 weather">
+                            <div class="current-weather border-bottom">
+                                <span class="date" id="date-time"> Thursday 10:10</span>
+                                <br />
+                                <span class="weather-type" id="weather-description"> Cloudy</span>
+                            </div>
+                            <div class="weather-value">
+                                <ul>
+                                    <li>Humidity <span id="humidity">96</span>%</li>
+                                    <li>Wind: <span id="wind">23</span> km/h</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-forecast" id="forecast">forecast</div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="sign">Please eat at the right time for your energy 🍜 that is the thing that you can control, not the
+        weather.</div>
+    <div class="sign"><a href="https://github.com/tuyennguyen9999/temperature_project_dottie" target="_blank"
+            class="sign">open-source</a> code by <a href="https://www.catcodes.io/" target="_blank"
+            class="sign">@dottie.nguyen👩‍💻</a>
+
+    </div>
+    <script src="src/projectw5.js"></script>
+</body>
+
+</html>

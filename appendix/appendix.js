@@ -1,3 +1,4 @@
+// In this file we have farenheit transformation
 // Add a search engine, when searching for a city (i.e. Paris), show the weather elements, and change the formatDate following the search result
 // it should display the name of the city on the result page and the current temperature of the city.
 
